@@ -3,6 +3,7 @@ from string_utils import StringUtils
 
 string_utils = StringUtils()
 
+
 @pytest.mark.positive
 @pytest.mark.parametrize("input_str, expected", [
     ("test", "Test"),
@@ -11,6 +12,7 @@ string_utils = StringUtils()
 ])
 def test_capitalize_positive(input_str, expected):
     assert string_utils.capitalize(input_str) == expected
+
 
 @pytest.mark.negative
 @pytest.mark.parametrize("input_str, expected", [
@@ -31,6 +33,7 @@ def test_capitalize_negative(input_str, expected):
 def test_trim_positive(input_str, expected):
     assert string_utils.trim(input_str) == expected
 
+
 @pytest.mark.negative
 @pytest.mark.parametrize("input_str, expected", [
     ("", ""),
@@ -38,6 +41,7 @@ def test_trim_positive(input_str, expected):
 ])
 def test_trim_negative(input_str, expected):
     assert string_utils.trim(input_str) == expected
+
 
 @pytest.mark.positive
 @pytest.mark.parametrize("input_str, symbol, expected", [
@@ -48,6 +52,7 @@ def test_trim_negative(input_str, expected):
 def test_contains_positive(input_str, symbol, expected):
     assert string_utils.contains(input_str, symbol) == expected
 
+
 @pytest.mark.negative
 @pytest.mark.parametrize("input_str, symbol, expected", [
     ("Skypro", "U", False),
@@ -57,8 +62,9 @@ def test_contains_positive(input_str, symbol, expected):
 def test_contains_negative(input_str, symbol, expected):
     assert string_utils.contains(input_str, symbol) == expected
 
+
 @pytest.mark.positive
-@pytest.mark.parametrize ("string, symbol, exepted", [
+@pytest.mark.parametrize("string, symbol, exepted", [
     ("Skypro", "k", "Sypro"),
     ("Skypro", "pro", "Sky"),
     ("123", "3", "12"),
@@ -66,8 +72,9 @@ def test_contains_negative(input_str, symbol, expected):
 def test_delete_symbol_positive(string, symbol, exepted):
     assert string_utils.delete_symbol(string, symbol) == exepted
 
+
 @pytest.mark.negative
-@pytest.mark.parametrize ("string, symbol, exepted", [
+@pytest.mark.parametrize("string, symbol, exepted", [
     ("", "a", ""),
     ("hello", "z", "hello"),
     ("  ", " ", ""),
