@@ -1,9 +1,9 @@
 import pytest
 from selenium import webdriver
-from login_page import LoginPage
-from inventory_page import InventoryPage
-from cart_page import CartPage
-from checkout_page import CheckoutPage
+from lesson_07.pages.login_page import LoginPage
+from lesson_07.pages.inventory_page import InventoryPage
+from lesson_07.pages.cart_page import CartPage
+from lesson_07.pages.checkout_page import CheckoutPage
 
 
 @pytest.fixture
