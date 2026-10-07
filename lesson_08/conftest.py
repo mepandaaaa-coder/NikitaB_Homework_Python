@@ -2,8 +2,8 @@ import pytest
 import requests
 
 # Учетные данные пользователя Yougile
-USER_LOGIN = "tg3yqfitzm@yzcalo.com"
-USER_PASSWORD = "ihW-m2v-n4x-rYh"
+USER_LOGIN = "подставьте логин"
+USER_PASSWORD = "подставьте пароль"
 BASE_URL = "https://yougile.com"
 
 
