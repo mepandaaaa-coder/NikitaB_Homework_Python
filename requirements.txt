@@ -1,0 +1,6 @@
+selenium
+pytest
+allure-pytest
+Faker
+SQLAlchemy
+psycopg2-binary
